@@ -1,17 +1,17 @@
 ---
 title: Menu Synchronization
-description: Sync your Square and Clover menus with ServeStream and manage menu items.
+description: Sync your Square menu with ServeStream and manage menu items.
 ---
 
 # Menu Synchronization
 
-ServeStream allows seamless syncing of menu items with Square and Clover, as well as editing and managing these items in your platform.
+ServeStream allows seamless syncing of menu items with Square, as well as editing and managing these items in your platform.
 
-## Syncing Menu from Square or Clover
+## Syncing Menu from Square
 
 1. Navigate to **Restaurant > Integration** in the ServeStream platform.
-2. Select **Sync Menu** for either Square or Clover to initiate the synchronization process.
-3. ServeStream retrieves all menu items from the linked Square or Clover account, including images and pricing.
+2. Click **Sync Menu** to initiate the synchronization process.
+3. ServeStream retrieves all menu items from the linked Square account, including images and pricing.
 4. Once synced, the updated menu items appear in ServeStream’s menu section.
 
 ## Editing and Managing Menu Items
@@ -19,5 +19,31 @@ ServeStream allows seamless syncing of menu items with Square and Clover, as wel
 1. Navigate to the **Menus** section under Restaurant Management.
 2. Select the item you want to edit and click **Edit**.
 3. Update details such as item name, price, category, or availability.
-4. Save changes to reflect them in ServeStream and automatically sync with Square or Clover.
-5. Deleted items in ServeStream will not remove them from Square or Clover, ensuring data consistency.
+4. Save changes to reflect them in ServeStream and automatically sync with Square.
+5. Deleted items in ServeStream will not remove them from Square, ensuring data consistency.
+
+## Uploading an Image to Cloudflare R2 for Menu Items
+
+To use images hosted on Cloudflare's R2 storage for your menu items, follow these steps:
+
+### 1. Set Up Cloudflare R2
+
+- Sign up for a **Cloudflare account** if you don't already have one.
+- Navigate to **R2** in the Cloudflare dashboard and create a new bucket.
+- Choose a **name** for your bucket and select the appropriate region.
+
+### 2. Upload an Image to Cloudflare R2
+
+- Using the Cloudflare dashboard, go to your R2 bucket.
+- Click **Upload** and select the image you wish to upload (e.g., a menu item image).
+- After the image is uploaded, Cloudflare will generate a URL for the image. For example: https://<bucket-name>.<account-id>.r2.cloudflarestorage.com/<image-file-name>
+- Copy this URL for use in the next steps.
+
+### 3. Add the Image to a Menu Item in ServeStream
+
+- In ServeStream, navigate to the **Menus** section.
+- Select the menu item you want to add an image to.
+- In the **Image URL** field, paste the Cloudflare R2 image URL you copied earlier.
+- Save your changes.
+
+The image will now be displayed as the menu item image in ServeStream.
