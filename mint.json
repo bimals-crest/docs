@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "ServeStream",
   "logo": {
-    "dark": "/logo/logo.svg",
-    "light": "/logo/logo.svg"
+    "dark": "/logo/main-logo.png",
+    "light": "/logo/main-logo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo.png",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
