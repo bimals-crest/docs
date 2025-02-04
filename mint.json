@@ -35,19 +35,19 @@
     {
       "group": "Restaurant Managment",
       "pages": [
-        "restaurant-managment/restaurant-managment.mdx"
+        "restaurant-managment/restaurant-managment"
       ]
     },
     {
       "group": "Menu",
       "pages": [
-        "menu/menu-sync.mdx"
+        "menu/menu-sync"
       ]
     },
     {
       "group": "AI Voice Agent",
       "pages": [
-        "ai-voice-agent/ai-voice-agent.mdx"
+        "ai-voice-agent/ai-voice-agent"
       ]
     }
   ],
