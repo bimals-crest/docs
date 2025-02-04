@@ -1,0 +1,84 @@
+---
+title: Menu Item Configuration Guide
+description: Structure menu items in JSON format for seamless integration and editing using the Visual Editor.
+---
+
+## Overview
+
+The **Menu Item Configuration** in ServeStream follows a structured JSON format. This ensures consistency across menu categories while allowing easy modifications through the **Visual Editor**.
+
+## JSON Format for Menu Items  
+
+Each menu consists of **categories**, with each category containing multiple **items**. Below is the required format:
+
+```json
+{
+  "menu": [
+    {
+      "items": [
+        {
+          "name": "Matka Biryani",
+          "image": "https://items-images-production.s3.us-west-2.amazonaws.com/files/f71041775b34728fd635e13081d67753a9c782a1/original.jpeg",
+          "price": 1.2,
+          "available": true,
+          "description": ""
+        }
+      ],
+      "category": "Pizza"
+    },
+    {
+      "items": [
+        {
+          "name": "Biryani",
+          "image": "",
+          "price": 2.3,
+          "available": true,
+          "description": ""
+        }
+      ],
+      "category": "Biryani"
+    },
+    {
+      "items": [
+        {
+          "name": "Milk",
+          "image": "",
+          "price": 2.0,
+          "available": true,
+          "description": ""
+        },
+        {
+          "name": "Butter Milk",
+          "image": "",
+          "price": 1.0,
+          "available": true,
+          "description": ""
+        }
+      ],
+      "category": "Uncategorized"
+    }
+  ]
+}
+```
+
+## JSON Fields Explanation  
+
+| Field        | Type     | Description |
+|-------------|---------|-------------|
+| `menu`      | Array   | Contains multiple menu categories. |
+| `category`  | String  | The category under which items are listed (e.g., Pizza, Biryani). |
+| `items`     | Array   | List of food items within a category. |
+| `name`      | String  | Name of the menu item. |
+| `image`     | String  | URL of the item's image (leave empty if not available). |
+| `price`     | Float   | Price of the item. |
+| `available` | Boolean | Availability status (`true` or `false`). |
+| `description` | String | Additional details about the item. |
+
+## Editing Menu Items  
+
+- If the menu JSON does not follow this structure, users can update it manually.
+- Alternatively, use the **Visual Editor** to modify the menu without editing raw JSON.
+- Click **Save from JSON** to apply changes or use the **Formatter** for structured updates.
+
+For further customization, visit the [Menu Management Guide](#) to learn how to create and configure menus efficiently.
+```

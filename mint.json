@@ -42,6 +42,8 @@
     {
       "group": "Menu",
       "pages": [
+        "menu/feature-overview",
+        "menu/menu-config",
         "menu/menu-sync"
       ]
     },
