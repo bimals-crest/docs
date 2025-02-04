@@ -35,7 +35,7 @@
     {
       "group": "Restaurant Managment",
       "pages": [
-        "restaurant-managment/restaurant-managment"
+        "restaurant-managment/restaurant-management"
       ]
     },
     {
@@ -47,7 +47,7 @@
     {
       "group": "AI Voice Agent",
       "pages": [
-        "ai-voice-agent/ai-voice-agent"
+        "ai-voice-agent/ai-voice-ordering"
       ]
     }
   ],
