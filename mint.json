@@ -29,10 +29,25 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "restaurant-management",
-        "menu-sync",
-        "ai-voice-ordering"
+        "introduction"
+      ]
+    },
+    {
+      "group": "Restaurant Managment",
+      "pages": [
+        "restaurant-managment/restaurant-managment.mdx"
+      ]
+    },
+    {
+      "group": "Menu",
+      "pages": [
+        "menu/menu-sync.mdx"
+      ]
+    },
+    {
+      "group": "AI Voice Agent",
+      "pages": [
+        "ai-voice-agent/ai-voice-agent.mdx"
       ]
     }
   ],
